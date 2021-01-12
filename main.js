@@ -21,6 +21,11 @@ const products = [
     stockUrl:
       'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=1042303&id_combination=20481&rand=1610419942699',
   },
+  {
+    name: 'Reposabarra De Musculación Rack 100',
+    stockUrl:
+      'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8380450&id_combination=16280&rand=1610462949911',
+  },
 ];
 
 const checkStock = async (product) => {
