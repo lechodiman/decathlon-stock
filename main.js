@@ -11,9 +11,20 @@ const products = [
     stockUrl:
       'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8289900&id_combination=19308&rand=1610418999339',
   },
+  {
+    name: 'Banco De Musculación 500 Plegable E Inclinable DOMYOS',
+    stockUrl:
+      'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8380453&id_combination=16283&rand=1610419706457',
+  },
+  {
+    name: 'Disco De Aleación Musculación 10 KG',
+    stockUrl:
+      'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=1042303&id_combination=20481&rand=1610419942699',
+  },
 ];
 
 const checkStock = async (product) => {
+  console.log('\n');
   console.log(`Checking stock for: ${product.name}`);
   const response = await axios.post(product.stockUrl);
 
@@ -26,8 +37,15 @@ const checkStock = async (product) => {
       .replace('(Lun a Vie)', '')
       .replace('Estacionamiento Open Pick Up', '')
       .trim();
+
     console.log(`${storeName}: ${storeInfo.info_stock}`);
   });
 };
 
-products.forEach(checkStock);
+const run = async () => {
+  for (const product of products) {
+    await checkStock(product);
+  }
+};
+
+run();
