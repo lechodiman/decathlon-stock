@@ -5,6 +5,8 @@ const products = [
     name: 'Barra De Musculación De 1,55 M Y 28 Mm',
     stockUrl:
       'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8289896&id_combination=19305&rand=1610418381407',
+    productUrl:
+      'https://www.decathlon.cl/p/8289896_barra-de-musculacion-de-155-m-y-28-mm.html',
   },
   {
     name: 'Barra De Musculación 2 M 28 Mm',
@@ -15,11 +17,21 @@ const products = [
     name: 'Banco De Musculación 500 Plegable E Inclinable DOMYOS',
     stockUrl:
       'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8380453&id_combination=16283&rand=1610419706457',
+    productUrl:
+      'https://www.decathlon.cl/p/8380453_banco-de-musculacion-500-plegable-e-inclinable-domyos.html',
+  },
+  {
+    name: 'Banca De Musculación 100',
+    stockUrl: '',
+    productUrl:
+      'https://www.decathlon.cl/p/8333640_banca-de-musculacion-100.html',
   },
   {
     name: 'Disco De Aleación Musculación 10 KG',
     stockUrl:
       'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=1042303&id_combination=20481&rand=1610419942699',
+    productUrl:
+      'https://www.decathlon.cl/p/1042303_disco-de-aleacion-musculacion-05-kg-28-mm-valor-varia-segun-peso.html',
   },
   {
     name: 'Reposabarra De Musculación Rack 100',
