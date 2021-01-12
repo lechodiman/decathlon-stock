@@ -33,8 +33,7 @@ const checkStock = async (product) => {
   Object.entries(stores).forEach(([key, storeInfo]) => {
     const storeName = storeInfo.name
       .replace('Decathlon', '')
-      .replace('(Lunes a Viernes)', '')
-      .replace('(Lun a Vie)', '')
+      .replace(/\(Lun.* a Vie.*\)/i, '')
       .replace('Estacionamiento Open Pick Up', '')
       .trim();
 
