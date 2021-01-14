@@ -22,7 +22,7 @@ const products = [
   },
   {
     name: 'Banca De Musculación 100',
-    stockUrl: '',
+    stockUrl: 'https://www.decathlon.cl/modules/cronos/cronos-ajax.php?id_product=8333640&id_combination=20726&rand=1610629221876',
     productUrl:
       'https://www.decathlon.cl/p/8333640_banca-de-musculacion-100.html',
   },
